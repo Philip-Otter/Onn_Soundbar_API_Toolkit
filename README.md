@@ -16,4 +16,4 @@ Onn 5_1_2 Atmos Soundbar
 
 ## Contributing
 ***
-These API interactions may be used for other devices so try it out and let me know! Make a pull request and add to the list of Tested Devices!
+These API interactions may be used for other devices so try it out and let me know! Make a pull request and add to the list of Tested Devices! I'm sure there are more API interactions out there it's just a matter of hunting them down!
