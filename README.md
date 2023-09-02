@@ -13,3 +13,7 @@ One day, while hurling into a bucket on my couch, I noticed that there was an On
 ## Tested Devices
 ***
 Onn 5_1_2 Atmos Soundbar
+
+## Contributing
+***
+These API interactions may be used for other devices so try it out and let me know! Make a pull request and add to the list of Tested Devices!
