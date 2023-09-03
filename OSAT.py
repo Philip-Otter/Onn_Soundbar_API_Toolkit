@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-# Tested devices:
-# Onn 5_1_2 Atmos Soundbar
+# Tested devices
+# Onn 5_1_2 Atmos Soundbar - 0.0.1186.0x247b2ea 
 
 import argparse
 import os
@@ -27,7 +27,7 @@ if arguments.list_actions:
     print("=============================================================")
     print("getName:           Get the device name")
     print("setName:           Change the device name")
-    print("getVersion:        Get the device version (MIGHT NOT WORK)")
+    print("getVersion:        Get the device version")
     print("\n                          AIRPLAY")
     print("=============================================================")
     print("getAirName:        Get the airplay name")
@@ -72,6 +72,11 @@ def postDataFile(data):
     file.close()
 
 
+def getVersion():
+    os.system('curl -v "http://' + t + '/api/getData?path=settings%3A%2Fversion&roles=value" -H "Referer: http://' + t + '/settings.fcgi"> output.txt')
+    file()
+
+
 if a is None and t is not None:
     print("ERROR:\nPlease provide an action!")
     exit()
@@ -90,8 +95,7 @@ else:
         else:
             print("ERROR:\nPlease provide a value for the " + a + "action!")
     elif a == "getVersion":
-        os.system('curl -v "http://' + t + '/api/getData?path=settings%3A%2Fversion%2Froles=value" -H "Referer: http://' + t + '/settings.fcgi"> output.txt')
-        file()        
+        getVersion()             
     elif a == 'getAirName':
         getAirName()
     elif a == 'setAirName':
