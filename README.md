@@ -12,7 +12,7 @@ One day, while hurling into a bucket on my couch, I noticed that there was an On
 
 ## Tested Devices
 ***
-Onn 5_1_2 Atmos Soundbar
+Onn 5_1_2 Atmos Soundbar  - Version 0.0.1186.0x247b2ea
 
 ## Contributing
 ***
